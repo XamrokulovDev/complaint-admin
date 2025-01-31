@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  complaint-admin-bot:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: complaint-admin-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
