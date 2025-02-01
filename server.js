@@ -1,4 +1,4 @@
-const { createClient } = require('@supabase/supabase-js');
+const { createClient } = require("@supabase/supabase-js");
 const dotenv = require("dotenv");
 const TelegramBot = require('node-telegram-bot-api');
 
